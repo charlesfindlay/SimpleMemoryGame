@@ -17,6 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var tile5: UIButton!
     @IBOutlet weak var tile6: UIButton!
     
+    var square1 = ""
+    var square2 = ""
+    var square3 = ""
+    var square4 = ""
+    var square5 = ""
+    var square6 = ""
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,11 +41,14 @@ class ViewController: UIViewController {
     }
 
     func startGame() {
+        assignValueToTile()
+    }
+    
+    func assignValueToTile() {
         
         
         
     }
-    
     
     
     
