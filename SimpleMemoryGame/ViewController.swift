@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var tile5: UIButton!
     @IBOutlet weak var tile6: UIButton!
     
+    @IBOutlet var weHateTheseFuckingButtons: [UIButton]!
+    
+    
+    var count = 0
+    var guess1 = ""
+    var guess2 = ""
+    
     var tiles = [String: String]()
     
     
@@ -35,6 +42,7 @@ class ViewController: UIViewController {
 
     func startGame() {
         assignValueToTile()
+        count = 0
     }
     
     func assignValueToTile() {
@@ -45,25 +53,19 @@ class ViewController: UIViewController {
         tiles["tile5"] = "B"
         tiles["tile6"] = "C"
         
-        
-        var test = tiles["tile1"]
-        print(test)
     }
     
-    func flipTile(chosenTile: String) {
-        let choiceValue = tiles[chosenTile]!
-        var makeButton: UIButton  = UIButton(chosenTile)
-        UIButton(chosenTile).setTitle("\(choiceValue)",forState: .Normal)
-    }
     
-//   func compareTiles() {
-//        if tile1.setTitle(square1,forState: .Normal) == tile3.setTitle(square3,forState: .Normal) {
-//           print("Yes")
-//      }
-//    }
     
     @IBAction func pressedTile1(sender: AnyObject) {
-        flipTile("tile1")
+        count++
+        if count == 1 {
+            guess1 = sender.currentTitle!!
+            tile1.setTitle(tiles["tile1"], forState: .Normal)
+            print(guess1)
+        } else {
+            guess2 = sender.currentTitle!!
+        }
         
     }
     
