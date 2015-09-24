@@ -22,10 +22,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="?"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Directions Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQE-qy-0Gx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Match squares until complete." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQE-qy-0Gx">
                                 <rect key="frame" x="73" y="20" width="185" height="95"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,6 +63,14 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tile1" destination="DdK-dF-wwq" id="yCV-KJ-1oq"/>
+                        <outlet property="tile2" destination="HWb-RI-7Ec" id="MDN-1G-LBw"/>
+                        <outlet property="tile3" destination="ENT-EP-SyQ" id="Ith-1f-PTy"/>
+                        <outlet property="tile4" destination="pSN-Pk-azs" id="mDN-pF-hSH"/>
+                        <outlet property="tile5" destination="RXo-Fp-YVQ" id="d9T-ll-NGW"/>
+                        <outlet property="tile6" destination="ir9-wC-zLv" id="ecx-QL-SeX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

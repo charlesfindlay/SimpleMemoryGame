@@ -10,9 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tile1: UIButton!
+    @IBOutlet weak var tile2: UIButton!
+    @IBOutlet weak var tile3: UIButton!
+    @IBOutlet weak var tile4: UIButton!
+    @IBOutlet weak var tile5: UIButton!
+    @IBOutlet weak var tile6: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        startGame()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +31,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func startGame() {
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+    
 
 }
 
