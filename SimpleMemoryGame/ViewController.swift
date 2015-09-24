@@ -51,6 +51,10 @@ class ViewController: UIViewController {
         square6 = "C"
     }
     
+    @IBAction func pressedTile1(sender: AnyObject) {
+        tile1.setTitle(square1,forState: .Normal)
+        
+    }
     
     
     
