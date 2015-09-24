@@ -17,12 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var tile5: UIButton!
     @IBOutlet weak var tile6: UIButton!
     
-    var square1 = ""
-    var square2 = ""
-    var square3 = ""
-    var square4 = ""
-    var square5 = ""
-    var square6 = ""
+    var tiles = [String: String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,20 +35,35 @@ class ViewController: UIViewController {
 
     func startGame() {
         assignValueToTile()
-        print(square5)
     }
     
     func assignValueToTile() {
-        square1 = "A"
-        square2 = "C"
-        square3 = "A"
-        square4 = "B"
-        square5 = "B"
-        square6 = "C"
+        tiles["tile1"] = "A"
+        tiles["tile2"] = "C"
+        tiles["tile3"] = "A"
+        tiles["tile4"] = "B"
+        tiles["tile5"] = "B"
+        tiles["tile6"] = "C"
+        
+        
+        var test = tiles["tile1"]
+        print(test)
     }
     
+    func flipTile(chosenTile: String) {
+        let choiceValue = tiles[chosenTile]!
+        var makeButton: UIButton  = UIButton(chosenTile)
+        UIButton(chosenTile).setTitle("\(choiceValue)",forState: .Normal)
+    }
+    
+//   func compareTiles() {
+//        if tile1.setTitle(square1,forState: .Normal) == tile3.setTitle(square3,forState: .Normal) {
+//           print("Yes")
+//      }
+//    }
+    
     @IBAction func pressedTile1(sender: AnyObject) {
-        tile1.setTitle(square1,forState: .Normal)
+        flipTile("tile1")
         
     }
     
