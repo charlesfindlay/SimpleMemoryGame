@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var tile5: UIButton!
     @IBOutlet weak var tile6: UIButton!
     
-    @IBOutlet var weHateTheseFuckingButtons: [UIButton]!
     
     
     var count = 0
@@ -56,17 +55,35 @@ class ViewController: UIViewController {
     }
     
     
+    func flipTile(chosenTile: String) {
+        count++
+        let choiceValue = tiles[chosenTile]!
+        print(choiceValue)
+        if count == 1 {
+            guess1 = choiceValue
+            print("Guess 1 = \(guess1)")
+        } else {
+            count = 0
+            guess2 = choiceValue
+            print("Guess 2 = \(guess2)")
+            checkForMatch()
+        }
+    }
+    
+    func checkForMatch() {
+        print("Your guesses are \(guess1) and \(guess2)")
+        if guess1 == guess2 {
+            print("You found a match")
+        } else {
+            print("No match")
+        }
+    }
+    
+    
     
     @IBAction func pressedTile1(sender: AnyObject) {
-        count++
-        if count == 1 {
-            guess1 = sender.currentTitle!!
-            tile1.setTitle(tiles["tile1"], forState: .Normal)
-            print(guess1)
-        } else {
-            guess2 = sender.currentTitle!!
-        }
-        
+        flipTile("tile1")
+        sender.setTitle(tiles["tile1"], forState: .Normal)
     }
     
     

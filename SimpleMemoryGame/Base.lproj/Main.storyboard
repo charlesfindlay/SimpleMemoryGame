@@ -73,12 +73,11 @@
                         <outlet property="tile4" destination="pSN-Pk-azs" id="mDN-pF-hSH"/>
                         <outlet property="tile5" destination="RXo-Fp-YVQ" id="d9T-ll-NGW"/>
                         <outlet property="tile6" destination="ir9-wC-zLv" id="ecx-QL-SeX"/>
-                        <outletCollection property="theseFuckingButtons" destination="HWb-RI-7Ec" collectionClass="NSMutableArray" id="PFv-Ta-zoy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="238" y="372"/>
+            <point key="canvasLocation" x="-137" y="352"/>
         </scene>
     </scenes>
 </document>
