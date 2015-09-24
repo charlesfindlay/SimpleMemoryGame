@@ -24,14 +24,11 @@ class ViewController: UIViewController {
     var square5 = ""
     var square6 = ""
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         startGame()
-        
         
     }
 
@@ -42,12 +39,16 @@ class ViewController: UIViewController {
 
     func startGame() {
         assignValueToTile()
+        print(square5)
     }
     
     func assignValueToTile() {
-        
-        
-        
+        square1 = "A"
+        square2 = "C"
+        square3 = "A"
+        square4 = "B"
+        square5 = "B"
+        square6 = "C"
     }
     
     
