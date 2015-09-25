@@ -28,30 +28,36 @@
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="pressedTile2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uAb-66-GrO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENT-EP-SyQ">
                                 <rect key="frame" x="20" y="274" width="130" height="130"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="pressedTile3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uI5-1k-N6V"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXo-Fp-YVQ">
                                 <rect key="frame" x="20" y="418" width="130" height="130"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="pressedTile5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GWv-x1-FAv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir9-wC-zLv">
                                 <rect key="frame" x="170" y="418" width="130" height="130"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="75"/>
                                 <state key="normal" title="?"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSN-Pk-azs">
-                                <rect key="frame" x="170" y="274" width="130" height="130"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
-                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="pressedTile6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="my1-Gg-Nj8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdK-dF-wwq">
                                 <rect key="frame" x="20" y="123" width="130" height="130"/>
@@ -60,6 +66,15 @@
                                 <state key="normal" title="?"/>
                                 <connections>
                                     <action selector="pressedTile1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MHh-5a-stX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSN-Pk-azs">
+                                <rect key="frame" x="170" y="274" width="130" height="130"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="75"/>
+                                <state key="normal" title="?"/>
+                                <connections>
+                                    <action selector="pressedTile4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Zh-9U-PfS"/>
                                 </connections>
                             </button>
                         </subviews>
